@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://b3ilpkpr1b0wo"]
+[gd_scene load_steps=5 format=3 uid="uid://b3ilpkpr1b0wo"]
 
 [ext_resource type="PackedScene" uid="uid://fpsw80b3m6pr" path="res://Scenes/player.tscn" id="1_g1vs5"]
+[ext_resource type="Texture2D" uid="uid://ddh6ybh11aiir" path="res://BackGround.png" id="2_pft7v"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_7v6vi"]
 
@@ -51,3 +52,9 @@ scale = Vector2(1, 2.84)
 shape = SubResource("WorldBoundaryShape2D_7v6vi")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
+
+[node name="BackGroundWindows" type="Sprite2D" parent="."]
+z_index = -10
+position = Vector2(411, -649)
+scale = Vector2(3.03971, 3.00542)
+texture = ExtResource("2_pft7v")
